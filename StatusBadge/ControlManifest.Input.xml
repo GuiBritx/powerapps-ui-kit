@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="GuilhermeComponents" constructor="StatusBadge" version="1.0.0" display-name-key="StatusBadge" description-key="Premium status badge with cinematic glass styling" control-type="standard">
+    <external-service-usage enabled="false" />
+    <property name="status" display-name-key="Status" description-key="Status value used to select the badge visual" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="customText" display-name-key="Custom text" description-key="Optional text displayed by the badge" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="size" display-name-key="Size" description-key="Badge size: Small, Medium or Large" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="theme" display-name-key="Theme" description-key="Badge theme: Light, Dark or Auto" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="showIcon" display-name-key="Show icon" description-key="Controls whether the status icon is visible" of-type="TwoOptions" usage="input" required="true" />
+    <resources>
+      <code path="index.ts" order="1" />
+      <css path="StatusBadge.css" order="1" />
+    </resources>
+  </control>
+</manifest>
